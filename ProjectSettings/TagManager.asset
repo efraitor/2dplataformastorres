@@ -38,6 +38,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 4106626213
+    locked: 0
+  - name: Level
+    uniqueID: 3571254259
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Effects
+    uniqueID: 620192899
+    locked: 0
+  - name: Pickups
+    uniqueID: 3163633531
+    locked: 0
+  - name: Enemies
+    uniqueID: 28631507
+    locked: 0
+  - name: Player
+    uniqueID: 2608974543
     locked: 0
