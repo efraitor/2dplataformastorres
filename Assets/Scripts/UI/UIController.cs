@@ -11,14 +11,22 @@ public class UIController : MonoBehaviour
     //Referencias a los sprites que cambiarán al perder o ganar un corazón
     public Sprite heartFull, heartEmpty;
 
+    //Hacemos el Singleton de este script
+    public static UIController sharedInstance;
+
+    private void Awake()
+    {
+        if (sharedInstance == null) sharedInstance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    //Método para actualizar la vida en la UI
+    public void UpdateHealthDisplay()
     {
         //En este caso será mejor implementar un Switch ya que depende del valor de la misma variable
         //Si la vida del jugador fuera 3

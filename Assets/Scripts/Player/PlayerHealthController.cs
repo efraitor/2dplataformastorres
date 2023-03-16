@@ -46,6 +46,6 @@ public class PlayerHealthController : MonoBehaviour
         }
 
         //Actualizamos la UI
-        //UIController.sharedInstance.UpdateHealthDisplay();
+        UIController.sharedInstance.UpdateHealthDisplay();
     }
 }
