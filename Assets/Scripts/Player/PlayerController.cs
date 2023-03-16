@@ -26,6 +26,14 @@ public class PlayerController : MonoBehaviour
     //Referencia al SpriteRenderer del jugador
     private SpriteRenderer theSR;
 
+    //Hacemos el Singleton de este script
+    public static PlayerController sharedInstance;
+
+    private void Awake()
+    {
+        if (sharedInstance == null) sharedInstance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
