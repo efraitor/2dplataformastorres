@@ -32,4 +32,22 @@ public class CheckpointController : MonoBehaviour
     {
         
     }
+
+    //Método para desactivar los checkpoints
+    public void DeactivateCheckpoints()
+    {
+        //Hacemos un bucle que pase por todos los checkpoints almacenados en el array
+        for (int i = 0; i < checkpoints.Length; i++)
+        {
+            //Para cada checkpoint uso su método de reset
+            checkpoints[i].ResetCheckpoint();
+        }
+    }
+
+    //Método para generar el punto de reaparición del jugador
+    public void SetSpawnPoint(Vector3 newSpawnPoint)
+    {
+        //El punto de spawn del jugador será el del checkpoint activo que le pasemos
+        spawnPoint = newSpawnPoint;
+    }
 }

@@ -41,7 +41,10 @@ public class PlayerHealthController : MonoBehaviour
             currentHealth = 0;
 
             //Hacemos desaparecer de momento al jugador
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
+
+            //Llamamos al método que respawnea al jugador
+            LevelManager.sharedInstance.RespawnPlayer();
 
         }
 

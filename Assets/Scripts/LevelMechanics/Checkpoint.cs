@@ -29,7 +29,21 @@ public class Checkpoint : MonoBehaviour
         //Si es el jugador el que ha entrado en la zona de Checkpoint y el Checkpoint estaba inactivo
         if (collision.CompareTag("Player"))
         {
+            //Desactivamos primero todos los checkpoints
+            CheckpointController.sharedInstance.DeactivateCheckpoints();
 
+            //Cambiamos el sprite a Checkpoint activo
+            theSR.sprite = cpOn;
+
+            //Le pasamos al CheckpointController la nueva posición de reaparición
+            CheckpointController.sharedInstance.SetSpawnPoint(transform.position);
         }
+    }
+
+    //Método para desactivar los Checkpoints
+    public void ResetCheckpoint()
+    {
+        //Cambiamos el sprite a Checkpoint inactivo
+        theSR.sprite = cpOff;
     }
 }

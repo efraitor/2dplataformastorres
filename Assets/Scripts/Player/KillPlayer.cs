@@ -26,6 +26,8 @@ public class KillPlayer : MonoBehaviour
             PlayerHealthController.sharedInstance.currentHealth = 0;
             //Actualizamos la UI
             UIController.sharedInstance.UpdateHealthDisplay();
+            //Hacemos el respawn
+            LevelManager.sharedInstance.RespawnPlayer();
         }
     }
 }
