@@ -11,6 +11,9 @@ public class UIController : MonoBehaviour
     //Referencias a los sprites que cambiarán al perder o ganar un corazón
     public Sprite heartFull, heartEmpty;
 
+    //Referencia al texto de la UI
+    public Text gemText;
+
     //Hacemos el Singleton de este script
     public static UIController sharedInstance;
 
@@ -22,7 +25,8 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Inicializar el contador de gemas
+        UpdateGemCount();
     }
 
     //Método para actualizar la vida en la UI
@@ -77,5 +81,12 @@ public class UIController : MonoBehaviour
                 //Cerramos el caso
                 break;
         }
+    }
+
+    //Método para actualizar el contador de gemas
+    public void UpdateGemCount()
+    {
+        //Actualizar el número de gemas recogidas
+        gemText.text = LevelManager.sharedInstance.gemCollected.ToString();//Cast -> convertimos el número entero en texto para que pueda ser representado en la UI
     }
 }
