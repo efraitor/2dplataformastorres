@@ -861,6 +861,8 @@ MonoBehaviour:
   - {fileID: 8117755463158719737}
   - {fileID: 8117755464991755357}
   - {fileID: 8117755463688659257}
+  bgm: {fileID: 8117755464295316351}
+  levelEndMusic: {fileID: 8117755464369958616}
 --- !u!1 &8117755464295316321
 GameObject:
   m_ObjectHideFlags: 0
