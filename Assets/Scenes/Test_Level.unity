@@ -310,10 +310,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
-    - target: {fileID: 777642138767725449, guid: a346ab6225b65dc4e81bb5f09f3325ba, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: a346ab6225b65dc4e81bb5f09f3325ba, type: 3}
@@ -432,10 +428,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1111599635742636711, guid: 749c2d4ce17cb084e96dad1406847c5c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 749c2d4ce17cb084e96dad1406847c5c, type: 3}
@@ -450,10 +442,6 @@ PrefabInstance:
     - target: {fileID: 1117724776324090946, guid: a4617123aca82bc42bf085291bf2011e, type: 3}
       propertyPath: m_Name
       value: UICanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117724776324090946, guid: a4617123aca82bc42bf085291bf2011e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1117724776324090958, guid: a4617123aca82bc42bf085291bf2011e, type: 3}
       propertyPath: m_Pivot.x
@@ -657,10 +645,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: KillZone
       objectReference: {fileID: 0}
-    - target: {fileID: 3632675550115834563, guid: 4aaf11b51e81ad2498a65965435c2a8b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 4aaf11b51e81ad2498a65965435c2a8b, type: 3}
@@ -720,10 +704,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem
       objectReference: {fileID: 0}
-    - target: {fileID: 5085994377226740486, guid: 4fd401ca4524a90419687b91efa3f993, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fd401ca4524a90419687b91efa3f993, type: 3}
@@ -738,10 +718,6 @@ PrefabInstance:
     - target: {fileID: 6825034102068821870, guid: 5a131656fad2b6142832b18e4ab25f2e, type: 3}
       propertyPath: m_Name
       value: Background
-      objectReference: {fileID: 0}
-    - target: {fileID: 6825034102068821870, guid: 5a131656fad2b6142832b18e4ab25f2e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6825034102068821871, guid: 5a131656fad2b6142832b18e4ab25f2e, type: 3}
       propertyPath: m_RootOrder
@@ -801,10 +777,6 @@ PrefabInstance:
     - target: {fileID: 7124570391744621248, guid: 6707cbfb70811de468bd04deca95aee3, type: 3}
       propertyPath: m_Name
       value: LevelManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 7124570391744621248, guid: 6707cbfb70811de468bd04deca95aee3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7124570391744621250, guid: 6707cbfb70811de468bd04deca95aee3, type: 3}
       propertyPath: m_RootOrder
@@ -867,11 +839,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7188130631511539547, guid: 0874539b311ec34448326a271bbec552, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 7188130631511539547, guid: 0874539b311ec34448326a271bbec552, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7188130631511539547, guid: 0874539b311ec34448326a271bbec552, type: 3}
       propertyPath: m_LocalPosition.z
@@ -908,10 +880,6 @@ PrefabInstance:
     - target: {fileID: 7188130631511539550, guid: 0874539b311ec34448326a271bbec552, type: 3}
       propertyPath: m_Name
       value: Potion
-      objectReference: {fileID: 0}
-    - target: {fileID: 7188130631511539550, guid: 0874539b311ec34448326a271bbec552, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
