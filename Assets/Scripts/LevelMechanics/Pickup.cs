@@ -40,6 +40,8 @@ public class Pickup : MonoBehaviour
                 isCollected = true;
                 //Actualizamos el contador de gemas
                 UIController.sharedInstance.UpdateGemCount();
+                //Llamamos al sonido de recoger una gema
+                AudioManager.sharedInstance.PlaySFX(6);
                 //Instanciamos el efecto de recoger el item
                 Instantiate(pickupEffect, transform.position, transform.rotation);//Le pasamos el objeto a instanciar, su posición, su rotación
                 //Destruimos el Game Object
@@ -55,6 +57,8 @@ public class Pickup : MonoBehaviour
                     PlayerHealthController.sharedInstance.HealPlayer();
                     //El objeto ha sido recogido
                     isCollected = true;
+                    //Llamamos al sonido de recoger una pocion
+                    AudioManager.sharedInstance.PlaySFX(7);
                     //Instanciamos el efecto de recoger el item
                     Instantiate(pickupEffect, transform.position, transform.rotation);//Le pasamos el objeto a instanciar, su posición, su rotación                                                                  //Destruimos el objeto
                     Destroy(gameObject);

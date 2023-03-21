@@ -42,6 +42,8 @@ public class LevelManager : MonoBehaviour
     {
         //Desactivamos al jugador
         PlayerController.sharedInstance.gameObject.SetActive(false);
+        //Llamamos al sonido de muerte
+        AudioManager.sharedInstance.PlaySFX(8);
         //Esperamos un tiempo determinado
         yield return new WaitForSeconds(waitToRespawn);
        
