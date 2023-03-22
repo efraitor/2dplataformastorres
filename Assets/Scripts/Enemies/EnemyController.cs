@@ -31,6 +31,8 @@ public class EnemyController : MonoBehaviour
         theRB = GetComponent<Rigidbody2D>();
         //Inicializamos el SpriteRenderer del enemigo teniendo en cuenta que está en el GO hijo
         theSR = GetComponentInChildren<SpriteRenderer>();
+        //Inicializamos el Animator del enemigo
+        anim = GetComponent<Animator>();
 
         //Sacamos el Leftpoint y el Rightpoint del objeto padre, para que no se muevan junto con este
         leftPoint.parent = null;//null es vacío o no tiene en este caso
@@ -91,6 +93,8 @@ public class EnemyController : MonoBehaviour
                 //waitCount = waitTime;
                 waitCount = Random.Range(waitTime * .25f, waitTime * 1.25f);//Random.Range(valor mínimo, valor máximo)
             }
+            //Animación de movimiento del enemigo
+            anim.SetBool("isMoving", true);
         }
         //Si por el contrario es el contador de tiempo de espera el que está lleno
         else if (waitCount > 0)
@@ -107,7 +111,9 @@ public class EnemyController : MonoBehaviour
                 //Inicializamos el contador de tiempo de movimiento
                 moveCount = moveTime;
                 //moveCount = Random.Range(moveTime * .75f, moveTime * 1.25f);
-            }   
+            }
+            //Animación de espera del enemigo
+            anim.SetBool("isMoving", false);
         }
     }
 }
