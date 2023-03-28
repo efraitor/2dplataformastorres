@@ -9,6 +9,9 @@ public class StompBox : MonoBehaviour
     //Atributo de la variable para determinar probabilidad de soltar objetos tras derrotar al enemigo
     [Range(0, 100)] public float chanceToDrop; //Range -> Añadimos un rango de valores entre un mínimo y un máximo
 
+    //Fuerza de rebote sobre enemigos
+    public float bounceForce;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +35,7 @@ public class StompBox : MonoBehaviour
             //Llamamos al método que elimina al enemigo ya que podemos acceder a sus propiedades a través del Collider
             collision.gameObject.GetComponentInParent<EnemyDeath>().EnemyDeathController();
             //Llamamos al método que hace rebotar al jugador
-            PlayerController.sharedInstance.Bounce();
+            PlayerController.sharedInstance.Bounce(bounceForce);
 
             //Generamos un valor entre 0 y 100
             float dropSelect = Random.Range(0, 100f);

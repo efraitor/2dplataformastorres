@@ -73,6 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectible: {fileID: 0}
   chanceToDrop: 25
+  bounceForce: 8
 --- !u!1 &1111599635742636711
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,7 +111,7 @@ Transform:
   - {fileID: 1111599636288501515}
   - {fileID: 1495195433}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1111599635742636708
 SpriteRenderer:
@@ -220,10 +221,11 @@ MonoBehaviour:
   groundCheckPoint: {fileID: 1111599636288501515}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   knockBackLength: 0.25
   knockBackForce: 8
   isLeft: 0
+  canInteract: 0
   reference: {fileID: 0}
 --- !u!95 &1111599635742636705
 Animator:
