@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
                 //La variable isGrounded se hará true siempre que el círculo físico que hemos creado detecte suelo
                 isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);//OverlapCircle(punto donde se genera el círculo, radio del círculo, layer a detectar)
                                                                                                    //Si se pulsa el botón de salto
-                if (Input.GetButtonDown("Jump"))
+                if (Input.GetButtonDown("Jump") || Input.GetButtonDown("ButtonA"))
                 {
                     //Si el jugador está en el suelo
                     if (isGrounded)
@@ -141,6 +141,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
         //ANIMACIONES DEL JUGADOR
         //Cambiamos el valor del parámetro del Animator "moveSpeed", dependiendo del valor en X de la velocidad de Rigidbody
         anim.SetFloat("moveSpeed", Mathf.Abs(theRB.velocity.x));//Mathf.Abs hace que un valor negativo sea positivo, lo que nos permite que al movernos a la izquierda también se anime esta acción

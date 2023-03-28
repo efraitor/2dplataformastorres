@@ -544,10 +544,6 @@ PrefabInstance:
       propertyPath: reference
       value: 
       objectReference: {fileID: 1117724777734089511}
-    - target: {fileID: 1111599635742636704, guid: 749c2d4ce17cb084e96dad1406847c5c, type: 3}
-      propertyPath: stopInput
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1111599635742636709, guid: 749c2d4ce17cb084e96dad1406847c5c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -694,10 +690,6 @@ PrefabInstance:
     - target: {fileID: 1117724776324090958, guid: a4617123aca82bc42bf085291bf2011e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1277759879141491588, guid: a4617123aca82bc42bf085291bf2011e, type: 3}
-      propertyPath: m_text
-      value: Main Menu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1019,10 +1011,6 @@ PrefabInstance:
     - target: {fileID: 7124570391744621248, guid: 6707cbfb70811de468bd04deca95aee3, type: 3}
       propertyPath: m_Name
       value: LevelManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 7124570391744621249, guid: 6707cbfb70811de468bd04deca95aee3, type: 3}
-      propertyPath: levelToLoad
-      value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 7124570391744621250, guid: 6707cbfb70811de468bd04deca95aee3, type: 3}
       propertyPath: m_RootOrder

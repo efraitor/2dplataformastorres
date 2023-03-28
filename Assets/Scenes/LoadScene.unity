@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1111599635742636704, guid: 749c2d4ce17cb084e96dad1406847c5c, type: 3}
+      propertyPath: reference
+      value: 
+      objectReference: {fileID: 962398701}
     - target: {fileID: 1111599635742636709, guid: 749c2d4ce17cb084e96dad1406847c5c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -253,6 +257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7124570391744621249, guid: 6707cbfb70811de468bd04deca95aee3, type: 3}
+      propertyPath: levelToLoad
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7124570391744621250, guid: 6707cbfb70811de468bd04deca95aee3, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -310,6 +318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 922097346}
   - component: {fileID: 922097345}
+  - component: {fileID: 922097347}
   m_Layer: 0
   m_Name: BusBackground
   m_TagString: Untagged
@@ -380,10 +389,35 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2106602497}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &922097347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922097344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3cd261434532e4c913d8403c17a9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelScene: LevelSelect
+--- !u!114 &962398701 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4429728357963175387, guid: a4617123aca82bc42bf085291bf2011e, type: 3}
+  m_PrefabInstance: {fileID: 1818511506}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75794364a79056f409476c9e58524560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1818511506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -510,13 +544,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106602496}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 922097346}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2106602498
 BoxCollider2D:
