@@ -641,7 +641,7 @@ RectTransform:
   - {fileID: 1009223835}
   - {fileID: 1611837359}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -743,7 +743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75794364a79056f409476c9e58524560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelSelect: 
+  levelSelect: LevelSelect
   mainMenu: MainMenu
   pauseMenu: {fileID: 6248532562553806252}
   isPaused: 0
