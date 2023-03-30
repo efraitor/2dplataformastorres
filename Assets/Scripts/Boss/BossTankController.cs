@@ -90,7 +90,7 @@ public class BossTankController : MonoBehaviour
 
                             winPlatform.SetActive(true);
 
-                            AudioManager.sharedInstance.StopBossMusic();
+                            //AudioManager.sharedInstance.StopBossMusic();
 
                             currentState = bossStates.ended;
                         }
@@ -159,14 +159,14 @@ public class BossTankController : MonoBehaviour
 
         AudioManager.sharedInstance.PlaySFX(0);
 
-        BossTankMine[] mines = FindObjectsOfType<BossTankMine>();
-        if (mines.Length > 0)
-        {
-            foreach (BossTankMine foundMine in mines)
-            {
-                foundMine.Explode();
-            }
-        }
+        //BossTankMine[] mines = FindObjectsOfType<BossTankMine>();
+        //if (mines.Length > 0)
+        //{
+        //    foreach (BossTankMine foundMine in mines)
+        //    {
+        //        foundMine.Explode();
+        //    }
+        //}
 
         health--;
 
